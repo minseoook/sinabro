@@ -71,7 +71,7 @@ async function main() {
       .map((id) => {
         const prodcutInCart = productMap[id];
         if (countMap[id] === 0) {
-          return "";
+          return null;
         }
         return getProductHtml(prodcutInCart, countMap[id]);
       })
